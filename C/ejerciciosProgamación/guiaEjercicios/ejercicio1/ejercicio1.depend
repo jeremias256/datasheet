@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1630274570 source:e:\proyectos_programacion1\guiadeejercicios\ejercicio1\funciones.c
+
+1630275523 source:e:\proyectos_programacion1\guiadeejercicios\ejercicio1\main.c
+	"cabecera.h"
+
+1630275523 e:\proyectos_programacion1\guiadeejercicios\ejercicio1\cabecera.h
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1632690495 source:e:\proyectos_programacion1\guiadeejercicios\ejemplosclase\clase3\pantalla\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1632690495 source:e:\proyectos_programacion1\ejemplosclase\clase3\ejemplopunteros\main.c
+	<stdio.h>
+	<stdlib.h>
+

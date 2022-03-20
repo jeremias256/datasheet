@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632686235 source:e:\proyectos_programacion1\guiadeejercicios\ejemplosclase\clase3\suma\funciones.c
+	"header.h"
+
+1632686052 e:\proyectos_programacion1\guiadeejercicios\ejemplosclase\clase3\suma\header.h
+	<stdio.h>
+	<stdlib.h>
+
+1632686175 source:e:\proyectos_programacion1\guiadeejercicios\ejemplosclase\clase3\suma\main.c
+	"header.h"
+
