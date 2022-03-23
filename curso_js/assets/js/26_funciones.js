@@ -6,15 +6,15 @@ const sumar2 = (a,b) => {
     
     return a + b;
 }
-//SI EL ARROW FUNCTION ES DE UNA LINEA PUEDE
-//const sumar2 = (a,b) => a + b;
+//!SI EL ARROW FUNCTION ES DE UNA LINEA PUEDE
+//!const sumar2 = (a,b) => a + b;
 
 function saludar( nombre ){
     
     console.log(`Hola ${nombre}`);
     console.log(arguments);
     return 1;
-    //SI SE QUITA RETURN => RETORNA UNDEFINED
+    //!SI SE QUITA RETURN => RETORNA UNDEFINED
 
 }
 
