@@ -17,7 +17,7 @@ juegos.forEach( (elemento, indice, arr) => { //muestra el array
     console.log({ elemento, indice , arr});
 })
 
-let nuevaLongitud = juegos.push( 'dota2'); //agrega el elemento al final y devuelve el length
+let nuevaLongitud = juegos.push('dota2'); //agrega el elemento al final y devuelve el length
 console.log(nuevaLongitud); //5
 console.log(juegos);
 
@@ -34,3 +34,6 @@ console.log(juegosBorrados); //devuelve un nuevo elemento o array con los borrad
 
 let projectIndex = juegos.indexOf('projectZomboid'); //CaseSensItIvE 
 console.log(projectIndex); // devuelve la posición
+
+let dia = 4;
+horaApertura = ([0,6].includes(dia)) ? 9:11;
