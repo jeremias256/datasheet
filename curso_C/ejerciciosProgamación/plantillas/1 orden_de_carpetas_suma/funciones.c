@@ -1,5 +1,10 @@
 #include "header.h"
-int resultado(int x,int y)
+int suma(int x,int y)
+{
+    return x+y;
+}
+
+int resta(int x,int y)
 {
     return x+y;
 }
