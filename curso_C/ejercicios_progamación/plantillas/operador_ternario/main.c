@@ -14,5 +14,6 @@ int main()
 
     printf("%s\n",calificacion>7 ? "aprobado":"desaprobado");
 
+
     return 0;
 }
