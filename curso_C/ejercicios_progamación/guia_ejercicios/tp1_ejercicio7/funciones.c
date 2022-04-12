@@ -1,6 +1,6 @@
 #include "header.h"
 
-int sumadivisores(int numero)
+int sumar_divisores(int numero)
 {
     int i;
     int acum=0;

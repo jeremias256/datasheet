@@ -2,7 +2,8 @@
 int main()
 {
     int numero = 6;
-    int acum;    acum = sumadivisores(numero);
+    int acum;
+    acum = sumar_divisores(numero);
 
     printf("Resultado de la suma de los divisores %d: ",acum);
 
@@ -17,4 +18,6 @@ int main()
     }
     else
         printf("Deficiente");
+
+    return 0;
 }
