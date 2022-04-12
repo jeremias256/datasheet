@@ -19,3 +19,13 @@
 1647404835 source:d:\dev\datasheets_repo\curso_c\ejerciciosprogamación\plantillas\1 orden_de_carpetas_suma\main.c
 	"header.h"
 
+1648878479 source:d:\dev\datasheets_repo\curso_c\ejercicios_progamación\plantillas\1 orden_de_carpetas_suma\main.c
+	"header.h"
+
+1649393047 d:\dev\datasheets_repo\curso_c\ejercicios_progamación\plantillas\1 orden_de_carpetas_suma\header.h
+	<stdio.h>
+	<stdlib.h>
+
+1649393049 source:d:\dev\datasheets_repo\curso_c\ejercicios_progamación\plantillas\1 orden_de_carpetas_suma\funciones.c
+	"header.h"
+

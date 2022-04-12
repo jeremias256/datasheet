@@ -3,10 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-int suma(int,int);
-*/
-
-
+int sumadivisores(int numero);
 
 #endif // HEADER_H_INCLUDED
