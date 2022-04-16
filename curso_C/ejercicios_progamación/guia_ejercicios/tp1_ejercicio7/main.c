@@ -1,18 +1,18 @@
 #include "header.h"
+
 int main()
 {
-    int numero = 6;
     int acum;
-    acum = sumar_divisores(numero);
+    acum = sumardivisores(6);
 
     printf("Resultado de la suma de los divisores %d: ",acum);
 
 
-    if(acum==numero)
+    if(acum==6)
     {
         printf("Perfecto");
     }
-    else if(acum>numero)
+    else if(acum>6)
     {
         printf("Abuntante");
     }
@@ -21,3 +21,4 @@ int main()
 
     return 0;
 }
+

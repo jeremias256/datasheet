@@ -27,6 +27,7 @@ console.log(juegos);
 
 let juegoBorrado = juegos.pop(); //elimina el ultimo y lo devuelve
 console.log(juegoBorrado); //devuelve dota2
+    //alternativa .shift elimina y retorna el primero
 
 let pos = 1;
 let juegosBorrados = juegos.splice( pos, 3);
