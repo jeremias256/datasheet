@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body style="min-height: 2000px; padding-top:56px">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar / Ocultar menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--menu navegación-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown"> <!--!dropup-->
+                        <a 
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false" 
+                            id="dropdown-menu"
+                        >
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Elemento 1</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 2</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 3</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-primary" type="button">Buscar</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"><h1>Hola mundo</h1></H1></div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

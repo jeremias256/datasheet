@@ -1,0 +1,78 @@
+body{
+    background:#f2f2f2;
+    font-size:16px;
+    font-family:'Open Sans', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+/*?                                      BARRA LATERAL                                      */
+.barra-lateral {
+    background-color:#262a34;
+    min-width:300px;
+    min-height:100vh;
+}
+.barra-lateral a{
+    color:#fff;
+}
+.barra-lateral .logo{
+    background:#0275db;
+}
+.barra-lateral .logo h2{
+    
+    font-size:30px;
+    font-family:'Roboto', sans-serif;
+    text-align:center;
+    font-weight:300;
+}
+
+/*?                                      MENU                                     */
+.barra-lateral .menu a{
+    display:block;
+    padding:20px;
+    font-family:'Roboto', sans-serif;
+    font-weight:500;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+.barra-lateral .menu a:hover{
+    background-color:#35ae6b;
+}
+.barra-lateral .menu a svg{
+    padding-right: 4px;
+}
+
+/* MEDIA QUERIES */
+/* DISPOSITIVO sm */
+@media screen and (max-width: 320px){
+
+}
+/* DISPOSITIVO sm*/
+@media screen and (max-width: 576px){
+    .barra-lateral{
+        min-height:auto;
+    }
+}
+/* DISPOSITIVO md*/
+@media screen and (max-width: 768px){
+
+}
+/* DISPOSITIVO lg*/
+@media screen and (max-width: 992px){
+
+}
+/* DISPOSITIVO xl*/
+@media screen and (max-width: 1200px){
+    .barra-lateral{
+        min-width:auto;
+    }
+    .barra-lateral .logo{
+        display:none;
+    }
+    .barra-lateral .menu a span{
+        display:none;
+    }
+}
+/* DISPOSITIVO xxl*/
+@media screen and (max-width: 1400px){
+
+}
