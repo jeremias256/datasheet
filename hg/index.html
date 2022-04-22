@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css"> -->
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg sticky-top bg-black">
+            
+            <div class="container">
+                
+                <button type="button" class="d-block d-sm-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+    
+                <a class="navbar-brand" href="{{ home_url }}">
+                    <img id="navbar-logo" class="mx-auto d-block" src="assets/img/hotgo-logo.png" alt="HotGo">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav me-auto h-100">
+                        <!--!ml-3 mr-auto d-flex-->
+
+                        <li class="nav-item">
+                            <a href="/es/category/all"
+                                class="nav-link text-secondary text-decoration-none justify-content-start align-self-center mt-2"
+                                style="font-weight:900!important;">
+                                SERIES Y VIDEOS
+                            </a>
+                        </li>
+
+                        <li class="nav-item navbar-brand brand mx-2 justify-content-center align-self-center">
+                            <a href="/es/category/playboy" class="nav-logo">
+                                <img src="assets/img/nav-playboy.png">
+                            </a>
+                        </li>
+
+                        <li class="nav-item navbar-brand brand mx-2 justify-content-center align-self-center">
+                            <a href="/es/category/venus" class="nav-logo">
+                                <img src="assets/img/nav-venus.png">
+                            </a>
+                        </li>
+
+                        <li class="nav-item navbar-brand brand mx-2 justify-content-center align-self-center">
+                            <a href="/es/category/sextreme" class="nav-logo">
+                                <img src="assets/img/nav-sextreme.png">
+                            </a>
+                        </li>
+
+                        <li class="nav-item navbar-brand brand mx-2 justify-content-center align-self-center">
+                            <a href="/es/category/penthouse" class="nav-logo">
+                                <img src="assets/img/nav-penthouse.png">
+                            </a>
+                        </li>
+
+                        <li class="nav-item navbar-brand brand mx-2 justify-content-center align-self-center">
+                            <a href="/es/category/private" class="nav-logo">
+                                <img src="assets/img/nav-private.png">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="d-flex ml-4">
+                    <a href="{{ signup_url }}" class="btn btn-sm btn-danger d-none d-sm-block"
+                        style="margin-right:4px!important;">CONTRATAR</a>
+                    <a href="{{ signin_url }}" class="btn btn-sm btn-outline-light d-none d-sm-block">ACCEDER</a>
+                </div>
+
+            </div>
+
+        </nav>
+        
+        <aside id="sidebar">
+            <div class="col p-3">
+                <a href="#" class="btn btn-outline-light btn-block btn-sm" role="button"
+                    title="Ver peliculas online para adultos, XXX">ACCEDER</a>
+                <hr class="hr-light mb-0">
+            </div>
+            <div class="col p-0">
+                <div class="collapse show" id="navMobMarcas">
+                    <ul class="list-unstyled">
+                        {% for category in categories %}
+                        {% if category.channel %}
+                        <li class="py-1">
+                            <h3>
+                                <a href="/es/category/{{ category.url }}" title="{{ category.name }}">
+                                    <img src="{{ url_for('static', filename='img/nav-' + category.name.lower() + '.png') }}">
+                                </a>
+                            </h3>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% if girls.pornstars %}
+                <a class="btn btn-block btn-collapse text-left text-uppercase text-white" data-toggle="collapse"
+                    href="#navMobPornstars" role="button" aria-expanded="false" aria-controls="navMobPornstars"
+                    id="btnMobPornstars">
+                    SexStars <i class="fas fa-chevron-up float-right"></i>
+                </a>
+                <div class="collapse" id="navMobPornstars">
+                    <ul class="list-unstyled">
+                        {% for star in girls.pornstars|sort(attribute='name') %}
+                        <li>
+                            <h3>
+                                <a href="/es/girl/{{ star.url }}" title="{{ star.name }}">{{ star.name }}</a>
+                            </h3>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% if girls.playmates %}
+                <a class="btn btn-block btn-collapse text-left text-uppercase text-white" data-toggle="collapse"
+                    href="#navMobPlaymates" role="button" aria-expanded="false" aria-controls="navMobPlaymates"
+                    id="btnMobPlaymates">
+                    Conejitas <i class="fas fa-chevron-up float-right"></i>
+                </a>
+                <div class="collapse" id="navMobPlaymates">
+                    <ul class="list-unstyled">
+                        {% for playmate in girls.playmates|sort(attribute='name') %}
+                        <li>
+                            <h3>
+                                <a href="/es/girl/{{ playmate.url }}" title="{{ playmate.name }}">{{ playmate.name }}</a>
+                            </h3>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                <a class="btn btn-block btn-collapse text-left text-uppercase text-white" data-toggle="collapse"
+                    href="#navMobCategories" role="button" aria-expanded="true" aria-controls="navMobCategories"
+                    id="btnMobCategories">
+                    Categorías <i class="fas fa-chevron-down float-right"></i>
+                </a>
+                <div class="collapse show" id="navMobCategories">
+                    <ul class="list-unstyled">
+                        {% for category in categories|sort(attribute='name') %}
+                            {% if not category.channel %}
+                            <li>
+                                <h3>
+                                    <a href="/es/category/{{ category.url }}" title="{{ category.name }}">{{ category.name }}</a>
+                                </h3>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
