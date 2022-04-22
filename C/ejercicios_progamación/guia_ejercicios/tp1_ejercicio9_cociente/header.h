@@ -6,6 +6,6 @@
 
 
 
-int funcion_cociente(int num1, int num2);
+void funcion_cociente(double, float);
 
 #endif

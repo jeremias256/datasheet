@@ -1,12 +1,13 @@
 #include "header.h"
 
-int funcion_cociente(int num1, int num2)
+void funcion_cociente(double num1, float num2)
 {
-    int i,cociente;
-    double resto;
+    int cociente;
+    int resto;
 
     cociente=num1/num2;
-    resto=fmod(double num1, double num2);
+    resto=fmod(num1,num2);
 
-    return cociente,resto;
+    printf("Resultado del cociente : %d\n",cociente);
+    printf("Resultado del resto : %d\n",resto);
 }
