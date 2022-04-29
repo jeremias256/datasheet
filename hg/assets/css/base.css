@@ -9,3 +9,9 @@ nav button{
     background-color:black;
     border:0 solid transparent;
 }
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+  }
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
