@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1651723389 source:d:\dev\datasheets_repo\c\ejercicios_progamación\guia_ejercicios\tp1_ejercicio14_fecha_ok\main.c
+	"header.h"
+
+1651722421 d:\dev\datasheets_repo\c\ejercicios_progamación\guia_ejercicios\tp1_ejercicio14_fecha_ok\header.h
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
