@@ -17,26 +17,40 @@ void ordernar_por_insercion(int *vec, int ce)
     }
 }
 
-void insertar(int *vec, int tam,int valor)
+void insertar(int *vec, int ce,int valor)
 {
-    int i = tam;
+    int i = ce;
     while(valor<vec[i-1])
     {
         vec[i]=vec[i-1];
         i--;
     }
     vec[i]=valor;
-    tam++;
 }
 
-void mostrar_vector(int *puntero, int ce)
+void mostrar_vector(int *vec, int ce)
 {
     int i;
     printf("\n");
     for(i=0;i<ce;i++)
     {
-        printf("[%d]",*puntero);
-        puntero++;
+        printf("[%d]",*vec);
+        vec++;
     }
     printf("\n");
+}
+
+void eliminar_elemento(int *vec, int ce, int pos)
+{
+    int i;
+    *(vec+pos-1)=0;
+}
+
+void acomodar(int *vec, int ce, int pos)
+{
+    int i;
+    for(i=pos-1;i<ce;i++)
+    {
+        vec[i]=vec[i+1];
+    }
 }
