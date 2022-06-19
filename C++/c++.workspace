@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="C++">
+		<Project filename="2_helloworld/2_helloworld.cbp" />
+		<Project filename="3_tipos_de_datos/3_tipos_de_datos.cbp" />
+		<Project filename="4_entrada_datos/4_entrada_datos.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

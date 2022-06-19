@@ -1,3 +1,4 @@
-js/mod_8_mod_webpack.lnk
-js/mod_10_todo.lnk
-js/mod_11_callbacks_promesas.lnk
+js/mod_8_mod_webpack/node_modules
+js/mod_10_todo/node_modules
+js/mod_11_callbacks_promesas/node_modules
+js/mod_12_http_upload/node_modules
